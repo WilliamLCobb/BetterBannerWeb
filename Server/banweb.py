@@ -71,7 +71,8 @@ def populate_db():
             for subject in subjects.keys():
                 #print "  Subject:", subject
                 # Insert Subject
-                db.execute("INSERT OR REPLACE INTO subjects (name, semester) VALUES (?, ?)", (subject, semester,))
+                db.execute("INSERT OR REPLACE INTO subjects (name) VALUES (?)", (subject,))
+                db.execute("INSERT OR REPLACE INTO subject_term (semester, subject) VALUES (?, ?)", (semester, subject))
 
 
                 for course in subjects[subject]:

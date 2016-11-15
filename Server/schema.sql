@@ -4,9 +4,15 @@ CREATE TABLE term (
 
 
 CREATE TABLE subjects (
-    name VARCHAR PRIMARY KEY,
-    semester VARCHAR
+    name VARCHAR PRIMARY KEY
 );
+
+CREATE TABLE subject_term (
+    semester VARCHAR,
+    subject VARCHAR,
+    PRIMARY KEY(semester, subject)
+);
+
 
 CREATE TABLE course(
      crn INT PRIMARY KEY,
@@ -26,5 +32,5 @@ CREATE TABLE class (
     location VARCHAR,
     type VARCHAR,
     course VARCHAR,
-    PRIMARY KEY (days, start_time, end_time, location)
+    PRIMARY KEY (days, start_time, end_time, location, course)
 );

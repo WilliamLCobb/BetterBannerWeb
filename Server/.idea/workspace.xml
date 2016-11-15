@@ -32,15 +32,16 @@
       <file leaf-file-name="banweb.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/banweb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.098798394">
-              <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.5193592">
+              <caret line="74" column="96" selection-start-line="74" selection-start-column="96" selection-end-line="74" selection-end-column="96" />
               <folding>
                 <element signature="e#26#35#0" expanded="true" />
-                <marker date="1479233077000" expanded="true" signature="1746:1795" placeholder="INSERT OR RE... term" />
-                <marker date="1479233077000" expanded="true" signature="2018:2080" placeholder="INSERT OR RE... subjects" />
-                <marker date="1479233077000" expanded="true" signature="2355:2467" placeholder="INSERT INTO course... " />
-                <marker date="1479233077000" expanded="true" signature="2832:3013" placeholder="INSERT INTO class... " />
-                <marker date="1479233077000" expanded="true" signature="2832:3255" placeholder="INSERT INTO class... " />
+                <marker date="1479233684000" expanded="true" signature="1746:1795" placeholder="INSERT OR RE... term" />
+                <marker date="1479233684000" expanded="true" signature="2018:2067" placeholder="INSERT OR RE... subjects" />
+                <marker date="1479233684000" expanded="true" signature="2110:2179" placeholder="INSERT OR RE... subject_term" />
+                <marker date="1479233684000" expanded="true" signature="2453:2565" placeholder="INSERT INTO course... " />
+                <marker date="1479233684000" expanded="true" signature="2930:3111" placeholder="INSERT INTO class... " />
+                <marker date="1479233684000" expanded="true" signature="2930:3353" placeholder="INSERT INTO class... " />
               </folding>
             </state>
           </provider>
@@ -50,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/schema.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-6.6666665">
-              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -388,22 +389,23 @@
     <entry file="file://$PROJECT_DIR$/schema.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.6666665">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/banweb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.098798394">
-          <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.5193592">
+          <caret line="74" column="96" selection-start-line="74" selection-start-column="96" selection-end-line="74" selection-end-column="96" />
           <folding>
             <element signature="e#26#35#0" expanded="true" />
-            <marker date="1479233077000" expanded="true" signature="1746:1795" placeholder="INSERT OR RE... term" />
-            <marker date="1479233077000" expanded="true" signature="2018:2080" placeholder="INSERT OR RE... subjects" />
-            <marker date="1479233077000" expanded="true" signature="2355:2467" placeholder="INSERT INTO course... " />
-            <marker date="1479233077000" expanded="true" signature="2832:3013" placeholder="INSERT INTO class... " />
-            <marker date="1479233077000" expanded="true" signature="2832:3255" placeholder="INSERT INTO class... " />
+            <marker date="1479233684000" expanded="true" signature="1746:1795" placeholder="INSERT OR RE... term" />
+            <marker date="1479233684000" expanded="true" signature="2018:2067" placeholder="INSERT OR RE... subjects" />
+            <marker date="1479233684000" expanded="true" signature="2110:2179" placeholder="INSERT OR RE... subject_term" />
+            <marker date="1479233684000" expanded="true" signature="2453:2565" placeholder="INSERT INTO course... " />
+            <marker date="1479233684000" expanded="true" signature="2930:3111" placeholder="INSERT INTO class... " />
+            <marker date="1479233684000" expanded="true" signature="2930:3353" placeholder="INSERT INTO class... " />
           </folding>
         </state>
       </provider>
