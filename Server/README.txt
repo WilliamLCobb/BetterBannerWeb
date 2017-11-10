@@ -1,0 +1,1 @@
+cd into the unzipped directory and run ‘flask initdb’. Afterwards, run ‘flask populate’ to populate the database.

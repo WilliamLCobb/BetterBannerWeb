@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Search</title>
+</head>
+<body>
+    <h1>Search</h1>
+    <form action="{{ url_for('search') }}" method="post">
+        Term:   <select name="term">
+                    {% for term in terms %}
+                        <option>{{ term.semester }}</option>
+                    {% endfor %}
+                </select><br/>
+        CRN: <input type = "text" name = "crn"><br />
+        Course Number: <input type = "text" name = "course_number"><br />
+        Name: <input type = "text" name = "name"><br />
+        Subject: <input type = "text" name = "subject"><br />
+        <input type ="hidden" name="action" value="show_results">
+        <input type="submit">
+    </form>
+    {% if step == "show_results" %}
+        <br />
+        <hr />
+        <br />
+
+        {% if courses|length > 0 %}
+            <ul>
+            {% for course in courses %}
+                <li><b> {{ course.name }}</b><br/>
+                 <i> CRN: {{ course.crn }}</i><br/>
+                 Subject: {{ course.subject }}<br />
+                <form action="{{ url_for('add') }}" method="post">
+                    <input type="hidden" name="crn" value="{{ course.crn }}">
+                    <input type="submit" value="Add Class">
+                </form>
+                </li><br />
+            {% endfor %}
+            </ul>
+        {% else %}
+            No courses found for search.
+        {% endif %}
+    {% endif %}
+
+</body>
+</html>

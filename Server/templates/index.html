@@ -4,13 +4,38 @@
         <title>Blog</title>
     </head>
 <body>
-    <h1>Blog Homepage</h1>
-    <ul>
-        <li><a href="{{ url_for('browse') }}">List all entries</a>
-        <li><a href="{{ url_for('write') }}">Write a new entry</a>
-        <li><a href="{{ url_for('edit') }}">Edit an entry</a>
-        <li><a href="{{ url_for('delete') }}">Delete an entry</a>
-        <li><a href="{{ url_for('delete_all') }}">Delete all entries for a user</a>
-    </ul>
+    <h1>Login</h1>
+    {% if step == "invalid_login" %}
+        <span style="color:red">Invalid password or username.</span>
+    {% elif step == "invalid_login_id" %}
+        <span style="color:red">Rhodes ID must be a number.</span>
+    {% endif %}
+
+     <form action="{{ url_for('index') }}" method="post">
+            Rhodes ID:<br />
+            R<input type = "text" name = "rhodes_id"><br /><br />
+            Password:<br />
+            <input type = "password" name = "password"><br /><br />
+            <input type ="hidden" name="action" value="login">
+            <input type="submit">
+     </form>
+     <br /><br />
+
+    <h1>Register</h1>
+    {% if step == "register_id_taken" %}
+        <span style="color:red">Username Taken.</span>
+    {% elif step == "invalid_register_id" %}
+        <span style="color:red">Invalid Rhodes ID or password is too short.</span>
+    {% endif %}
+
+     <form action="{{ url_for('index') }}" method="post">
+            Rhodes ID:<br />
+            R<input type = "text" name = "rhodes_id"><br /><br />
+            Password:<br />
+            <input type = "password" name = "password"><br /><br />
+            <input type ="hidden" name="action" value="register">
+            <input type="submit">
+     </form>
+     <br /><br />
 </body>
 </html>

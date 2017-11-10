@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Better Banweb</title>
+    </head>
+<body>
+    <h1>Home</h1>
+    <ul>
+        <li><a href="{{ url_for('search') }}">Add classes</a>
+    </ul>
+    <br />
+    <hr />
+    <br />
+    <h1>Saved Classes</h1>
+    {% if courses|length > 0 %}
+        <ul>
+        {% for course in courses %}
+            <li><b>{{ course.name }}</b>
+             <i> CRN: {{ course.crn }} Subject: {{ course.subject }} </i>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        Your are not enrolled in any classes :(.
+    {% endif %}
+</body>
+</html>
