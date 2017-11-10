@@ -1,0 +1,5 @@
+Teachers
+    Intigrate to ratemyrprofessor
+    Have Teacher Bios
+Classes
+
